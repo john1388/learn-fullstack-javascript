@@ -4,7 +4,8 @@
   "description": "For an up-to-date configuration guide: [jscomplete.com/reactful](https://jscomplete.com/reactful)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --exec babel-node server.js --ignore public/",
+    "dev": "webpack -wd"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/john1388/learn-fullstack-javascript#readme",
   "dependencies": {
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
     "mongodb": "^3.6.3",
     "prop-types": "^15.7.2",
